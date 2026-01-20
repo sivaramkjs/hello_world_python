@@ -28,7 +28,7 @@ def decrement(number, by=1):
     return number - by
 
 
-print(decrement(2, 2))
+print(decrement(2))
 
 
 # *args (unbounded list of arguments)
@@ -41,3 +41,30 @@ def multiply(*numbers):
 
 
 print(multiply(2, 3, 4, 5))
+
+
+# Unpacking list into positional arguments
+def add(a, b):
+    return a + b
+
+
+nums = [1, 2]
+print(add(*nums))
+
+
+# Unpacking dict into keyword arguments
+def add1(a, b):
+    return a + b
+
+
+nums1 = {"a": 1, "b": 2}
+print(add1(**nums1))
+
+
+# Lambda functions
+def divide(a, b):
+    return lambda: a / b
+
+
+func = divide(3, 2)
+print(func())
