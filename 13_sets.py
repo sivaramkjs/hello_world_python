@@ -1,3 +1,5 @@
+# Set/Dictionary is a collection without any order of elements and no index-based access
+
 a = set()  # unordered collection, contain unique items
 a = {1}
 a.add(2)

@@ -31,7 +31,7 @@ def decrement(number, by=1):
 print(decrement(2))
 
 
-# *args (unbounded list of arguments)
+# *args (packing unbounded list of arguments)
 def multiply(*numbers):
     product = 1
     for number in numbers:
@@ -41,6 +41,20 @@ def multiply(*numbers):
 
 
 print(multiply(2, 3, 4, 5))
+print(multiply(*[2, 3, 4, 5]))
+
+
+# packing multiple keyword arguments
+def add_kw(**kwargs):
+    final_sum = 0
+    for v in kwargs.values():
+        final_sum += v
+
+    return final_sum
+
+
+print(add_kw(**{'a': 2, 'b': 4}))  # unpacking dictionary into keyword arguments
+print(add_kw(a=5, b=6))  # multiple keyword arguments
 
 
 # Unpacking list into positional arguments

@@ -63,11 +63,11 @@ def group_exceptions():
     try:
         raise ExceptionGroup('There were multiple exceptions',
                              [
-                                 # This must be an exception instance not type like in the normal `raise NameError` case
+                                 # This must be an exception instance not type like allowed in the normal `raise NameError` case
                                  NameError('Wrong name'),
                                  ValueError('Wrong value')
                              ])
-    except* NameError as e:  # `except*` is used to extract a specific type of exception from the exception group
+    except* NameError as e:  # `except*` is used to extract all specific type of exceptions from the exception group
         print(e)
     except* ValueError as e:
         print(e)
@@ -92,7 +92,7 @@ def nest_group_exceptions():
                                          ZeroDivisionError('x/0 error')
                                      ])]
                              )
-    except* NameError as e:  # `except*` is used to extract a specific type of exception from the exception group
+    except* NameError as e:  # `except*` is used to extract all specific type of exceptions from the exception group
         print(e)
     except* ValueError as e:
         print(e)

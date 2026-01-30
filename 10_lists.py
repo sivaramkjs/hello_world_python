@@ -1,3 +1,5 @@
+# List/Tuple is a sequence with defined order of elements and index-based access
+
 names = ["John", "Bob", "Sivaram", "Sravani"]
 names[0] = "Jon"
 print(names[0])

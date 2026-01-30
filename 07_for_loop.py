@@ -1,6 +1,5 @@
 for number in range(1, 10, 2):
-    print("Attempt", number, (number) * ".")
-
+    print("Attempt", number, number * ".")
 
 # for..else
 successful = True
@@ -14,12 +13,10 @@ for number in range(3):
 else:
     print("Attempt failed")
 
-
 # Nested loops
 for x in range(5):
     for y in range(3):
         print(f"({x}, {y})")
-
 
 # Iterables
 print(type(5))
