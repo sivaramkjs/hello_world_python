@@ -41,3 +41,10 @@ print([num for element in a for num in element])
 
 # Nested listcomps
 print([[row[i] for row in a] for i in range(3)])
+
+# The below code causes infinite recursion due to circular referencing
+# i.e., a = [a] -> a[0] = a -> a[0][0] = a and so on.
+# Python represents this using "[...]" notation instead of RecursionError
+a = []
+a.append(a)
+print(a)  # [[...]]
