@@ -38,6 +38,9 @@ for chunk in split_chunk(d):
 gen = (i * i for i in range(10))
 print(gen)  # generator expression describing the sequence to generate
 print(sum(gen))
+# We can also use generator expression directly in place of the function argument without explicit outer parenthesis.
+# Python automatically recognizes the argument as generator for any function call with syntax "func(expr for item in iterable)"
+print(sum(i * i for i in range(10)))
 
 x = 'spam'
 rev = (x[i] for i in range(len(x) - 1, -1, -1))

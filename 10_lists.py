@@ -4,9 +4,10 @@ names = ["John", "Bob", "Sivaram", "Sravani"]
 names[0] = "Jon"
 print(names[0])
 print(names[-1])
-print(names[1:])
+print(names[1:])  # Slicing
 print(names[:2])
 print(names[-2:])
+print(names[::-1])  # reverse
 print(names[:-2])
 print(names[0:4:2])
 print(names[:])
@@ -16,10 +17,11 @@ numbers = [5, 2, 3, 6, 3]
 numbers2 = numbers.copy()
 
 numbers.insert(2, 10)
-numbers.append(14)
+numbers.append(14)  # single item
+numbers.extend([6, 7, 8])  # multiple items
 numbers.remove(3)
 # numbers.reverse()
-numbers.pop(1)
+print(numbers.pop(1))
 print(numbers)
 print(numbers.index(3))
 print(50 in numbers)

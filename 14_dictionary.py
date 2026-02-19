@@ -9,6 +9,10 @@ print(a)
 del a["y"]
 print(a)
 
+# print(a["y"])  # KeyError
+print(a.get("y"))  # Returns None
+print(a.get("y", 0))  # Returns default value
+
 print(list(a))
 print(sorted(a, reverse=True))
 print("y" in a)

@@ -92,7 +92,14 @@ print(check_point_cls_guard(Point(1, 1)))
 
 # Truthy/Falsy values pattern matching
 def check_bool_val(value):
+    true_val = True
     match value:
+        # Shows "Pattern makes remaining case clauses unreachable" error since Python treats
+        # any bare variable name as a capture variable instead of checking for an existing variable
+        # case true_val:
+        #     print("True")
+        case _ if value is true_val:
+            print(f'{value} - {true_val}: true_val')
         case True:  # Matches only the literal singleton "True" value by identity
             print("True")
         case False:  # Matches only the literal singleton "False" value

@@ -4,6 +4,8 @@ a = set()  # unordered collection, contain unique items
 a = {1}
 a.add(2)
 a.add(2)
+a.remove(2)  # KeyError if not present
+a.discard(3)  # Safe remove without error if not present
 b = a.union({3, 4})
 
 print(b)

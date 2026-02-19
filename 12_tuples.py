@@ -1,7 +1,10 @@
+# tuples are immutable. Hence, they are slightly memory efficient than lists
+# since the size is fixed at the time of creating unlike list where there will be
+# additional capacity pre-allocation for any further mutations
 a = ()  # empty tuple
 b = "hello",  # single item tuple defined with a trailing comma
 
-c = (1, 1.5, "Hi")  # heterogeneous sequence of items unlike homogeneous sequence as list
+c = (1, 1.5, "Hi")
 
 print(c[:2])
 

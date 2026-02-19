@@ -10,7 +10,7 @@ print(10 - 3)
 print(10 * 3)
 print(10 / 3)  # floating point quotient
 print(10 // 3)  # integer point quotient
-print(10 % 3)  # modulus (reminder)
+print(10 % 3)  # modulus (remainder)
 print(10 ** 3)  # exponent
 
 # increment/decrement operators
@@ -22,7 +22,6 @@ print(x)
 x = x - 3
 x -= 3
 print(x)
-
 
 # number functions
 print(round(2.9))
