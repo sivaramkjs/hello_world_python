@@ -125,7 +125,7 @@ check_bool_val(1)
 def check_val(value):
     match value:
         case str(val):  # Combining built-in class validation matching and variable capture
-            # case str() as val:
+            # case str() as val: # alternative syntax for str(val)
             print(f'{val} is string')
         case int(val):
             print(f'{val} is int')

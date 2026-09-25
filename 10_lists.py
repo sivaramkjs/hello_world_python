@@ -2,15 +2,15 @@
 
 names = ["John", "Bob", "Sivaram", "Sravani"]
 names[0] = "Jon"
-print(names[0])
-print(names[-1])
-print(names[1:])  # Slicing
-print(names[:2])
-print(names[-2:])
-print(names[::-1])  # reverse
-print(names[:-2])
-print(names[0:4:2])
-print(names[:])
+print(f'{names[0]=}')
+print(f'{names[-1]=}')
+print(f'{names[1:]=}')  # Slicing
+print(f'{names[:2]=}')
+print(f'{names[-2:]=}')  # becomes names[len(names) - 2:]
+print(f'{names[::-1]=}')  # reverse
+print(f'{names[:-2]=}')  # becomes names[:len(names) - 2]
+print(f'{names[0:4:2]=}')
+print(f'{names[:]=}')
 
 # Methods
 numbers = [5, 2, 3, 6, 3]
@@ -50,3 +50,18 @@ print([[row[i] for row in a] for i in range(3)])
 a = []
 a.append(a)
 print(a)  # [[...]]
+
+a = [[]] * 3  # same object reference for all inner lists
+a[0].append(1)
+print(a)
+
+a = [[] for _ in range(3)]
+a[0].append(1)
+print(a)
+
+a = [0] * 3
+print(a)
+
+print(1 | 2 | 2)
+print(2 & 2)
+print(1 ^ 2 ^ 2)

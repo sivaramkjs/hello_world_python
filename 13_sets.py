@@ -1,4 +1,8 @@
 # Set/Dictionary is a collection without any order of elements and no index-based access
+# Unordered collection
+# Immutable items
+# Heterogeneous - Can contain different type of items in the same set
+# Unique
 
 a = set()  # unordered collection, contain unique items
 a = {1}

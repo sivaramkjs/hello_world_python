@@ -31,7 +31,6 @@ course7 = 'Python \\Programming'
 course8 = 'Python \nProgramming'
 print(course8)
 
-
 # Format strings
 first = "Sivaram"
 last = "Koduri"
@@ -40,6 +39,7 @@ full_name = first + " " + last
 formatted_full_name = f"{len(first)} {last} {2 + 2}"
 print(formatted_full_name)
 
+print("".join(sorted(first, key=str.lower)))
 
 # string methods
 course9 = ' Python Programming '

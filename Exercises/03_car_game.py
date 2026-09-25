@@ -1,6 +1,6 @@
 help_commands = ["start - to start the car", "stop - to stop the car", "quit - to exit"]
 is_started = False
-is_stopped= False
+is_stopped = False
 
 while True:
     user_command = input("> ")

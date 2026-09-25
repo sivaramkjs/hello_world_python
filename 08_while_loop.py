@@ -10,7 +10,7 @@ while number > 0:
 #     print("ECHO", command)
 
 
-# Infinite loop
+# Infinite loop with condition
 while True:
     command = input("> ")
     print("ECHO", command)

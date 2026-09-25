@@ -22,6 +22,12 @@ numbers2 = numbers.copy()
 numbers.sort()
 
 # Iterating multiple sequences at the same time
-# "zip()" returns a tuple containing an item at the same index from each sequence in an iteration
+# "zip()" returns a tuple containing an item at the same index from each sequence in an iteration.
+# Basically, "zip" function turns rows into columns, and columns into rows, similar to transposing a matrix.
 for num1, num2 in zip(numbers, numbers2):
     print(f'num1: {num1}, num2: {num2}', end=', ')
+
+# unzip
+a = [1, 2, 3]
+b = [4, 5, 6]
+print(list(zip(*zip(a, b))))

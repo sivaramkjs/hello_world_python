@@ -1,3 +1,5 @@
+import random
+
 a = {}
 a = {"x": 1, "y": 2}
 print(a)
@@ -27,6 +29,10 @@ print(c)
 # Dict Comprehension
 d = {x: x ** 2 for x in (2, 3, 4)}
 print(d)
+
+d1 = {x: random.randrange(1, 100) for x in [random.randrange(1, 100) for _ in range(6)]}
+
+print(sorted(d1.items(), key=lambda x: x[1]))
 
 # Looping
 # key and value at the same time
